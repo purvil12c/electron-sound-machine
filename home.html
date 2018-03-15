@@ -1,0 +1,59 @@
+<html>
+<head>
+  <style>
+    .bodyDiv{
+      display: flex;
+      align-items: center;
+      height: 100%; width: 100%;
+      justify-content: center;
+
+    }
+    .buttonDiv{
+      height: 100px; width: 100px;
+      background-color: lightblue;
+      border-radius: 100px;
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-color: white;
+      transition: 0.3s;
+
+    }
+    .buttonDiv:hover{
+      height: 120px;
+      width: 120px;
+      background-color: #ff5555;
+    }
+    .buttonTitle{
+      font-family: 'Bebas';
+    }
+  </style>
+  <script src="functions.js"></script>
+</head>
+<body>
+  <div class="bodyDiv">
+    <div class="buttonDiv" id="1" onmouseover="playSound(this);">
+      <h1 class="buttonTitle">Kick 1</h1>
+    </div>
+    <div class="buttonDiv" id="2" onmouseover="playSound(this);">
+      <h1 class="buttonTitle">Kick 2</h1>
+    </div>
+    <div class="buttonDiv" id="3" onmouseover="playSound(this);">
+      <h1 class="buttonTitle">Kic k 3</h1>
+    </div>
+    <div class="buttonDiv" id="4" onmouseover="playSound(this);">
+      <h1 class="buttonTitle">Kick 4</h1>
+    </div>
+    <div class="buttonDiv" id="5" onmouseover="playSound(this);">
+      <h1 class="buttonTitle">Kick 5</h1>
+    </div>
+  </div>
+  <audio id="audio1" controls hidden="" src="./sounds/1.wav" type ="audio/mp3">your browser does not support Html5</audio>
+  <audio id="audio2" controls hidden="" src="./sounds/2.wav" type ="audio/mp3">your browser does not support Html5</audio>
+  <audio id="audio3" controls hidden="" src="./sounds/3.wav" type ="audio/mp3">your browser does not support Html5</audio>
+  <audio id="audio4" controls hidden="" src="./sounds/4.wav" type ="audio/mp3">your browser does not support Html5</audio>
+  <audio id="audio5" controls hidden="" src="./sounds/5.wav" type ="audio/mp3">your browser does not support Html5</audio>
+</body>
+</html>
